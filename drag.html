@@ -1,0 +1,13 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-10 right-border full-page" 
+    (drop)="drop($event)"
+    (dragover)="allowDrop($event)">
+      drag the image from left
+    </div>
+    <div class="col-sm-2">
+      <img id="drag1" src="https://www.w3schools.com/html/img_logo.gif" draggable="true" width="336" height="69" (dragstart)="drag($event)">
+
+    </div>
+  </div>
